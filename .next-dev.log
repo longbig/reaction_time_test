@@ -1,0 +1,49 @@
+
+> my-v0-project@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3000
+
+   ▲ Next.js 16.0.10 (Turbopack)
+   - Local:         http://127.0.0.1:3000
+   - Network:       http://127.0.0.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 172ms
+ GET / 200 in 1054ms (compile: 1005ms, render: 48ms)
+ ✓ Compiled in 48ms
+ ✓ Compiled in 44ms
+ ⨯ ./app/page.tsx:198:14
+Parsing ecmascript source code failed
+[0m [90m 196 |[39m           [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 197 |[39m         [33m<[39m[33m/[39m[33mCard[39m[33m>[39m
+[31m[1m>[22m[39m[90m 198 |[39m       [33m<[39m[33m/[39m[33mmain[39m[33m>[39m
+ [90m     |[39m              [31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 199 |[39m     [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 200 |[39m   )
+ [90m 201 |[39m }
+ [90m 202 |[39m[0m
+
+Expected '</', got 'jsx text (
+    )'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+ GET / 500 in 321ms (compile: 283ms, render: 37ms)
+ ✓ Compiled in 220ms
+ GET / 200 in 184ms (compile: 123ms, render: 60ms)
+ GET / 200 in 44ms (compile: 4ms, render: 40ms)
+ ✓ Compiled in 41ms
+ ✓ Compiled in 24ms
+ GET / 200 in 109ms (compile: 67ms, render: 42ms)
+ ✓ Compiled in 55ms
+ GET / 200 in 104ms (compile: 65ms, render: 40ms)
+ ✓ Compiled in 41ms
+ GET / 200 in 117ms (compile: 67ms, render: 50ms)
