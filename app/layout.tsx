@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: "Reaction Time Test - Human Benchmark",
   description: "Test your reaction time. When the red box turns green, click as quickly as you can.",
   generator: "v0.app",
+  // Set the primary site URL for absolute metadata links
+  metadataBase: new URL("https://reactiontest.site"),
+  // Prefer the apex domain as canonical to avoid duplicate content with www
+  alternates: {
+    canonical: "https://reactiontest.site/",
+  },
   icons: {
     icon: [
       {
