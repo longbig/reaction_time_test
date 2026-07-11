@@ -7,8 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const primary = "https://reactiontest.site";
   const withWww = "https://www.reactiontest.site";
 
-  // Only the homepage currently exists. If you add more pages, list them here.
-  const paths = ["/"];
+  // List all static routes we want indexed
+  const paths = ["/", "/pricing"];
 
   return [
     ...paths.map((p) => ({
@@ -25,4 +25,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 }
-
